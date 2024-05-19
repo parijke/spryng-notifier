@@ -1,0 +1,36 @@
+{
+    "name": "symfony/spryng-notifier",
+    "type": "symfony-notifier-bridge",
+    "description": "Symfony Spryng Notifier Bridge",
+    "keywords": ["spryng", "notifier"],
+    "homepage": "https://symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Rijke",
+            "email": "paul@ibuildings.nl",
+            "homepage": "https://github.com/parijke"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "symfony/http-client": "^6.4|^7.0",
+        "symfony/notifier": "^6.4|^7.0"
+    },
+    "require-dev": {
+        "symfony/event-dispatcher": "^5.4|^6.0|^7.0",
+        "symfony/phpunit-bridge": "7.1.x-dev",
+        "phpunit/phpunit": "^11.2@dev"
+    },
+    "autoload": {
+        "psr-4": {"Symfony\\Component\\Notifier\\Bridge\\Spryng\\": ""},
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
